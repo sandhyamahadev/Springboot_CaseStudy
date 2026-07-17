@@ -43,7 +43,7 @@ public class CandidateController {
 	
 	//Update Candidate
 	@PutMapping("/{id}")
-	public Candidate updateCandidate(@PathVariable long id, @RequestBody CandidateDTO dto) {
+	public Candidate updateCandidate(@PathVariable Long id, @RequestBody CandidateDTO dto) {
 		return candidateService.updateCandidate(id, dto);
 	}
 	
